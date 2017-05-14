@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>My Pixi Project</title>
+  <style>
+    html, body, canvas {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    .wrapper{
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background-size: 600px 600px;
+    }
+    .scratchWindow{
+      height: 500px;
+      position: absolute;
+      width: 500px;
+      left:50%;
+      top:50%;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 500px) {
+
+      .wrapper{
+        background-size: 200px 200px;
+      }
+
+      .scratchWindow{
+        height: 300px;
+        position: absolute;
+        width: 300px;
+        left:50%;
+        top:60%;
+        transform: translate(-50%,-50%);
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class='wrapper'>
+    <div class='scratchWindow'>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
